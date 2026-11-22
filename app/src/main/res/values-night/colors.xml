@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色底上直接用主色即可，浅色底需要更深的同色相 -->
+    <color name="aqua_primary_text">@color/aqua_dark_primary_text</color>
+</resources>

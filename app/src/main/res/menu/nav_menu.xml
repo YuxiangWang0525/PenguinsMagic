@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_history"
+        android:title="@string/nav_history" />
+    <item
+        android:id="@+id/subscriptionsFragment"
+        android:icon="@drawable/ic_subscriptions"
+        android:title="@string/nav_subscriptions" />
+    <item
+        android:id="@+id/blockRulesFragment"
+        android:icon="@drawable/ic_shield"
+        android:title="@string/nav_rules" />
+    <item
+        android:id="@+id/whitelistFragment"
+        android:icon="@drawable/ic_whitelist"
+        android:title="@string/nav_whitelist" />
+    <item
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/ic_info"
+        android:title="@string/nav_about" />
+</menu>

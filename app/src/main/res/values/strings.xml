@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Penguins Magic</string>
+
+    <!-- 侧边栏 -->
+    <string name="nav_history">拦截历史</string>
+    <string name="nav_subscriptions">订阅列表</string>
+    <string name="nav_about">关于</string>
+    <string name="nav_header_title">骚扰电话拦截</string>
+    <string name="nav_header_summary">已拦截 %1$d 通 · 订阅 %2$d 个</string>
+    <string name="nav_open_drawer">打开侧边栏</string>
+    <string name="nav_close_drawer">关闭侧边栏</string>
+    <string name="blocking_switch_label">拦截</string>
+    <string name="blocking_switch_desc">骚扰电话拦截总开关</string>
+
+    <!-- 拦截历史 -->
+    <string name="history_stat_blocked_total">累计拦截</string>
+    <string name="history_stat_today">今日</string>
+    <string name="history_stat_marked">标记未拦截</string>
+    <string name="history_filter_all">全部</string>
+    <string name="history_filter_blocked">已拦截</string>
+    <string name="history_filter_marked">仅标记</string>
+    <string name="history_empty_title">暂无拦截记录</string>
+    <string name="history_empty_body">打开顶栏右侧的拦截开关，并在订阅列表里配置服务地址与调用令牌，之后的来电查询结果会记录在这里。</string>
+    <string name="history_empty_action">去配置订阅</string>
+    <string name="history_clear">清空历史</string>
+    <string name="history_clear_confirm">确定清空全部拦截记录？该操作不可撤销。</string>
+    <string name="record_blocked">已拦截</string>
+    <string name="record_marked">已标记，未开启该类拦截</string>
+    <string name="record_count">×%1$d</string>
+    <string name="record_source">来源 %1$s</string>
+    <string name="record_unknown_type">未分类号码</string>
+
+    <!-- 订阅列表 -->
+    <string name="subscriptions_empty_title">还没有订阅</string>
+    <string name="subscriptions_empty_body">添加一个兼容 getBlockInfo 的服务地址与调用令牌，可同时订阅多个来源，命中任意一个即拦截。</string>
+    <string name="subscription_add">添加订阅</string>
+    <string name="subscription_edit">编辑订阅</string>
+    <string name="subscription_delete">删除</string>
+    <string name="subscription_delete_title">删除订阅？</string>
+    <string name="subscription_delete_body">删除后该订阅的调用令牌会从设备安全存储中一并移除。</string>
+    <string name="subscription_saved">已保存</string>
+    <string name="subscription_removed">已删除订阅</string>
+    <string name="subscription_disabled">已停用</string>
+    <string name="subscription_enabled">已启用</string>
+    <string name="subscription_never_tested">尚未测试</string>
+
+    <string name="field_name">名称</string>
+    <string name="field_base_url">服务地址</string>
+    <string name="field_token">调用令牌</string>
+    <string name="field_header">鉴权请求头</string>
+    <string name="helper_base_url">例如 https://spam.example.com，也可填局域网 http://127.0.0.1:8839</string>
+    <string name="helper_token">形如 chl_ 加 48 位十六进制，面板里只在创建时显示一次</string>
+    <string name="helper_header">留空则从 /health 读取 tokenHeader，取不到时用 x-auth-token</string>
+    <string name="token_kept">令牌已保存在系统安全存储中，留空表示不修改</string>
+    <string name="token_required">请填写调用令牌</string>
+    <string name="error_name_required">请填写名称</string>
+    <string name="error_url_required">请填写服务地址</string>
+    <string name="error_url_invalid">服务地址需以 http:// 或 https:// 开头</string>
+    <string name="action_test">测试连接</string>
+    <string name="action_save">保存</string>
+    <string name="test_sample_number">测试号码</string>
+    <string name="test_running">正在查询…</string>
+    <string name="test_health_ok">服务 %1$s · 版本 %2$s · 后端 %3$s</string>
+    <string name="test_health_missing">/health 未返回可用信息，已按 %1$s 发送令牌</string>
+    <string name="test_lookup_ok">查询 %1$s：%2$s</string>
+    <string name="test_lookup_detail">分类 %1$s · 子标签 %2$s · 原因 %3$s</string>
+    <string name="test_quota">额度：本小时 %1$d / %2$s</string>
+    <string name="test_result_title">测试结果</string>
+
+    <!-- 订阅状态 -->
+    <string name="status_ok">正常</string>
+    <string name="status_token_invalid">令牌无效或已吊销，请重新配置</string>
+    <string name="status_account_disabled">账户已被停用</string>
+    <string name="status_rate_limited">已达每小时额度上限，%1$s 后重试</string>
+    <string name="status_network_error">网络不可达</string>
+    <string name="status_server_error">服务端返回 %1$d</string>
+    <string name="status_bad_request">号码格式不被接受</string>
+
+    <!-- 关于 -->
+    <string name="about_intro_title">这个应用做什么</string>
+    <string name="about_intro_body">接入系统来电筛选服务，在电话振铃前把号码交给你订阅的拦截接口判断，命中规则则静默拒接，不产生通知与来电提醒。</string>
+    <string name="about_role_title">来电筛选权限</string>
+    <string name="about_role_granted">已作为系统来电筛选应用运行</string>
+    <string name="about_role_missing">尚未把本应用设为系统来电筛选应用，拦截不会生效</string>
+    <string name="about_role_action">授予拦截权限</string>
+    <string name="about_flow_title">工作流程</string>
+    <string name="about_flow_body">1. 来电到达，系统把号码交给 CallScreeningService。\n2. 先在本机通讯录里比对，是联系人就直接放行（不授予通讯录权限时系统根本不会把联系人的来电交给我们）。\n3. 未缓存时向所有已启用的订阅并行请求 getBlockInfo，任一订阅返回 hit=true 即拒接；结果依赖服务端账户勾选的分类。\n4. 查询结论写入拦截历史，号码、类型、品牌或诈骗手段都在那一行里。</string>
+    <string name="about_rules_title">判定与降级</string>
+    <string name="about_rules_body">只看 data.hit，不把 inDatabase 当作拦截依据。in_database_but_not_enabled 记为「已标记」，说明库里有这个号但你没勾选该分类。网络异常、5xx、429 超限一律放行并沿用缓存，避免服务端抖动误挂正常来电；429 会退避到下一个 UTC 整点。</string>
+    <string name="about_privacy_title">数据与隐私</string>
+    <string name="about_privacy_body">调用令牌优先保存在 Android Keystore 加密的数据里；国产机的 Keystore 时有时无，那种情况下退一步存进应用私有目录的凭据文件——只有本应用可读、不随备份导出，等 Keystore 恢复可用时下一次读取会自动搬回加密存储。日志里只有异常，不会出现令牌本身。号码缓存与拦截历史只留在本机，关闭应用或删除订阅即可清除。请求只发送来电号码本身，不带通讯录。通讯录权限只用来在本机判断来电号码是不是你的联系人，是就直接放行；不读取联系人列表，也不上传任何通讯录数据。这个权限可以单独关掉：不授予时按系统文档联系人的来电压根不会交给筛查，熟人不会被误拦；授予后联系人的来电会进来，改由本应用自己比对通讯录放行。</string>
+    <string name="about_token_storage">令牌存储：%1$d 条已 Keystore 加密，%2$d 条在应用私有目录</string>
+    <string name="about_token_storage_none">还没有保存过令牌</string>
+    <string name="about_api_title">接口约定</string>
+    <string name="about_api_body">GET /getBlockInfo?number=…，请求头名称取自 GET /health 的 tokenHeader（默认 x-auth-token）。号码在本地归一化：去掉空格与 - _ ( ) . /，保留开头的 +，+86 前缀与国内 11 位两种写法都会尝试。</string>
+    <string name="about_version_title">版本</string>
+    <string name="about_version_body">版本 %1$s（%2$d）</string>
+    <string name="about_clear_cache">清空号码缓存</string>
+    <string name="about_cache_cleared">缓存已清空（%1$d 条）</string>
+
+    <!-- 版权信息：署名与链接保持原文，不翻译 -->
+    <string name="about_copyright_byline" translatable="false">Brought by RiverFrozer and Penguins Magic contributors</string>
+    <string name="about_codename_label" translatable="false">"Internal Codename: "</string>
+    <string name="about_codename" translatable="false">Anti You</string>
+    <string name="about_codename_url" translatable="false">https://projectsekai.fandom.com/wiki/ANTI_YOU</string>
+    <string name="about_github_label" translatable="false">"GitHub: "</string>
+    <string name="about_github_url" translatable="false">http://github.com/YuxiangWang0525/PenguinsMagic</string>
+    <string name="about_birthday">🎂 生日快乐，桐谷遥！🎉🐧 🎂</string>
+
+    <string name="ok">好</string>
+    <string name="cancel">取消</string>
+
+    <!-- 状态辅助信息 -->
+    <string name="meta_header">请求头 %1$s</string>
+    <string name="meta_last_probe">最后查询 %1$s</string>
+    <string name="meta_quota">本小时 %1$d / %2$d</string>
+    <string name="meta_quota_unlimited">额度不限</string>
+    <string name="record_time_count">%1$s · ×%2$d</string>
+
+    <!-- 拦截开关与角色 -->
+    <string name="blocking_on">拦截已开启</string>
+    <string name="blocking_off">拦截已关闭</string>
+    <string name="role_granted">已获得授权，拦截生效</string>
+    <string name="about_open_settings">打开系统设置</string>
+    <string name="about_role_recheck">重新检测</string>
+    <string name="about_role_granted_oem">拦截已生效：由系统设置授权（角色接口查不到，最近一次处理来电 %1$s）</string>
+    <string name="about_role_manual">本系统没有提供来电筛选角色授权入口，需要在系统设置里手动把本应用选为来电/骚扰拦截应用</string>
+    <string name="about_role_not_qualified">安装包不合格：来电筛选服务的 android:permission 必须是 BIND_SCREENING_SERVICE。声明成别的权限名时，系统判定本应用没有资格，授权框不会出现、telecom 也不会绑定服务，改手机设置没用，只能修正清单后重新打包。</string>
+    <string name="about_role_meta">角色接口 %1$s · 系统确认 %2$s · 最近处理来电 %3$s · 小米系统 %4$s · 通讯录 %5$s · 服务声明 %6$s</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="never">从未</string>
+
+    <!-- 授权引导 -->
+    <string name="guide_title">需要「来电筛选 / 骚扰拦截」授权</string>
+    <string name="guide_body_xiaomi">MIUI、HyperOS 用的也是系统的「来电筛选应用」授权对话框（点上面的按钮），只是它只在安装包合格时才会出现。\n\n电话应用里的「骚扰拦截」只能改小米自己的拦截规则，选不了第三方应用，所以在那里怎么都找不到本应用；安全中心里能改的是自启动与省电策略——请允许本应用自启动、无限制，否则系统不会绑定筛查服务。\n\n授权后回到本页点「重新检测」。如果对话框一闪而过、什么都没发生，那是安装包资格问题，不是手机设置问题。</string>
+    <string name="guide_body_declared">这个安装包没有资格成为来电筛选应用，系统不会弹授权框，也永远不会把来电交给我们。\n\n原因在清单：来电筛选服务的 android:permission 必须是 android.permission.BIND_SCREENING_SERVICE。名字写成别的（例如并不存在的 BIND_CALL_SCREENING）时，系统的角色资格检查直接判定不合格，telecom 也无法绑定服务——表现和「厂商系统不支持」一模一样，但在手机设置里怎么改都没用。\n\n修正清单后重新打包安装即可。</string>
+    <string name="guide_body_generic">如果系统没有弹出授权框，请在设置里把本应用设为「来电筛选应用」：\n\n设置 → 应用 → 特殊应用权限 → 来电筛选；部分厂商在电话应用的「骚扰拦截」里选择第三方拦截应用。\n\n授权后回到本页点「重新检测」即可。</string>
+    <string name="guide_action_role">用系统授权对话框</string>
+    <string name="guide_action_settings">打开设置</string>
+    <string name="guide_settings_failed">没能打开系统设置页面，请手动进入设置搜索「骚扰拦截」或「来电筛选」</string>
+    <string name="guide_note_contacts">\n\n刚才的通讯录权限没给也不影响拦截：不授予时系统不会把联系人的来电交给筛查；授予后联系人的来电会进来，由本应用自己在通讯录里比对并放行。号码只在本地比对，不会上传。</string>
+
+    <!-- 测试结果 -->
+    <string name="test_health_failed">/health 读取失败：%1$s</string>
+    <string name="test_header_line">请求头 %1$s（来自 /health）</string>
+    <string name="test_header_manual">请求头 %1$s（手动指定）</string>
+    <string name="test_lookup_failed">getBlockInfo 失败：%1$s</string>
+    <string name="test_result_hit">命中，会拦截</string>
+    <string name="test_result_marked">已入库，但未勾选该分类</string>
+    <string name="test_result_pass">未命中，放行</string>
+    <string name="test_no_number">请填写测试号码</string>
+    <string name="test_number_invalid">测试号码需要 5 到 24 位数字</string>
+    <string name="test_running_hint">正在请求服务…</string>
+    <string name="unlimited">不限</string>
+    <string name="token_save_failed">Keystore 和应用私有目录都没写进去，订阅未保存。原因：%1$s\n\n同样的异常也记在 logcat 的 SecureTokenStore 标签下。</string>
+    <string name="subscription_saved_private">已保存（令牌暂存私有目录）</string>
+    <string name="token_saved_detail_private">Android Keystore 当时不可用，令牌改存在应用私有目录里的明文凭据文件（plain_token_…）。它只有本应用能读、不随备份导出，但少了 Keystore 那层保护。\n\nKeystore 恢复后，下一次读取这条令牌时会自动搬回加密存储并删除明文。当时的异常：%1$s</string>
+    <string name="about_cache_count">号码缓存 %1$d 条</string>
+
+    <!-- 后台运行与提醒 -->
+    <string name="about_background_title">后台运行与提醒</string>
+    <string name="about_background_body">拦截依赖本应用在后台一直活着：省电策略会冻结后台进程，小米与红米还要额外允许自启动。开机或升级后本应用会自己复查一次授权，资格丢了就发通知提醒，不用你打开应用才发现。</string>
+    <string name="about_battery_ok">电池优化：已豁免，后台不受限</string>
+    <string name="about_battery_restricted">电池优化：仍受限，后台可能被冻结</string>
+    <string name="about_notifications_on">通知：已开启，拦截成功后会提醒</string>
+    <string name="about_notifications_off">通知：未开启，拦截成功后不会有提醒</string>
+    <string name="about_autostart_xiaomi">自启动：系统不向应用暴露这个开关，需要在自启动管理里自己确认已允许</string>
+    <string name="about_autostart_other">自启动：本机没有可跳转的自启动页面，电池优化豁免已覆盖后台运行</string>
+    <string name="about_open_battery">申请后台不受限</string>
+    <string name="about_open_autostart">打开自启动管理</string>
+    <string name="battery_prompt_manual">系统没有提供后台豁免弹窗，请到「关于」页手动设置</string>
+    <string name="notify_channel_block">拦截提醒</string>
+    <string name="notify_channel_alert">授权提醒</string>
+    <string name="notify_blocked_title">%1$s 已拦截</string>
+    <string name="notify_blocked_generic">已拦截来电</string>
+    <string name="notify_reauth_title">拦截可能已失效</string>
+    <string name="notify_reauth_body">重启或升级后系统没再把来电交给本应用，点按重新授权</string>
+
+    <!-- 本机拦截规则 -->
+    <string name="nav_rules">本机规则</string>
+    <string name="rules_empty_title">还没有本机规则</string>
+    <string name="rules_empty_body">这里拦下的号码不花订阅配额、不等网络。可以写一个完整号码，也可以写一段号段前缀：13000001234 是营销集团的号，把 1300000 写成号段，同批号码就一起拦下了。在订阅页打开「保存为策略」，被拦的号码会自动出现在这里。</string>
+    <string name="rule_add">添加规则</string>
+    <string name="rule_edit">编辑规则</string>
+    <string name="rule_enabled">启用这条规则</string>
+    <string name="rule_kind_title">拦截范围</string>
+    <string name="rule_kind_number">完整号码</string>
+    <string name="rule_kind_prefix">号段前缀</string>
+    <string name="rule_kind_number_row">完整号码 · 只拦这一个</string>
+    <string name="rule_kind_prefix_row">号段前缀 · 拦下以此开头的所有号码</string>
+    <string name="rule_hint_number">只拦这一个号码。+86 与国内写法都行，比对时会自动统一。</string>
+    <string name="rule_hint_prefix">拦下以这段数字开头的所有号码，适合营销集团批量买走的号段。至少 6 位：再短会把大量正常号码一起拦掉。</string>
+    <string name="rule_field_pattern">号码</string>
+    <string name="rule_field_prefix">号段前缀</string>
+    <string name="rule_field_note">备注（可空）</string>
+    <string name="rule_helper_pattern">可以带 +86、空格或短横线，保存时会自动归一化</string>
+    <string name="rule_helper_note">写给自己看的，例如「营销集团号段」，会显示在拦截历史里</string>
+    <string name="rule_error_required">请填写号码或号段</string>
+    <string name="rule_error_invalid">格式不对：只能是数字、开头一个 +，以及空格或短横线这类分隔符</string>
+    <string name="rule_error_prefix_short">号段至少 6 位，再短会把大量正常号码一起拦掉</string>
+    <string name="rule_error_duplicate">已经有同样的一条规则了</string>
+    <string name="rule_saved">规则已保存</string>
+    <string name="rule_removed">规则已删除</string>
+    <string name="rule_delete">删除</string>
+    <string name="rule_delete_title">删除这条规则？</string>
+    <string name="rule_delete_body">删除后这个号码或号段不再被本机拦截；订阅服务商仍可能判定拦截。</string>
+    <string name="rule_origin_manual">手动添加 · %1$s</string>
+    <string name="rule_origin_learned">来自 %1$s · %2$s</string>
+    <string name="subscription_policy_label">保存为策略</string>
+    <string name="subscription_policy_helper">开启后，这条订阅判定拦截的号码会自动写入「本机规则」，下次同一个号码不再花配额去问；号段要不要拦一整批由你自己判断，应用只写完整号码。关闭则只留在有时效的号码缓存里。</string>
+
+    <!-- 白名单 -->
+    <string name="nav_whitelist">白名单</string>
+    <string name="whitelist_empty_title">还没有白名单</string>
+    <string name="whitelist_empty_body">白名单里的号码永远放行，连锁封禁也拦不到。通讯录里的联系人本来就会放行，不用重复添加；这里适合放那些不在通讯录、但你确定要接的号码。</string>
+    <string name="whitelist_add">添加号码</string>
+    <string name="whitelist_edit">编辑白名单</string>
+    <string name="whitelist_edit_intro">白名单压过所有拦截判定：本机规则、订阅服务商、连锁封禁都拦不到这个号码。</string>
+    <string name="whitelist_field_number">号码</string>
+    <string name="whitelist_helper_number">只填一个完整号码，白名单不做号段匹配；+86 与国内写法都行</string>
+    <string name="whitelist_field_note">备注（可空）</string>
+    <string name="whitelist_helper_note">例如「家人」「公司前台」，只在本机显示</string>
+    <string name="whitelist_error_required">请填写号码</string>
+    <string name="whitelist_error_invalid">格式不对：只能是数字、开头一个 +，以及空格或短横线这类分隔符</string>
+    <string name="whitelist_error_duplicate">这个号码已经在白名单里了</string>
+    <string name="whitelist_saved">已加入白名单</string>
+    <string name="whitelist_removed">已移出白名单</string>
+    <string name="whitelist_delete">移出</string>
+    <string name="whitelist_delete_title">移出白名单？</string>
+    <string name="whitelist_delete_body">移出后这个号码重新接受拦截判定，连锁封禁期间也会被拒接。</string>
+    <string name="whitelist_meta">始终放行 · 添加于 %1$s</string>
+
+    <!-- 连锁封禁 -->
+    <string name="chain_ban_title">连锁封禁</string>
+    <string name="chain_ban_helper">拦下一个号码后 90 秒内拒接所有陌生号码，每再拦一个延长 30 秒。白名单与通讯录联系人始终放行。</string>
+    <string name="chain_ban_idle">待触发：下一个被拦截的号码会启动封禁</string>
+    <string name="chain_ban_active">封禁中 · 剩余 %1$s</string>
+    <string name="chain_ban_active_trigger">封禁中 · 剩余 %1$s · 由 %2$s 触发</string>
+    <string name="chain_ban_active_capped">封禁中 · 剩余 %1$s · 已达 %2$d 分钟上限</string>
+    <string name="chain_ban_cleared">连锁封禁已解除</string>
+    <string name="chain_cap_title">封禁上限</string>
+    <string name="chain_cap_label">封禁上限 %1$d 分钟</string>
+    <string name="chain_cap_hint">从触发那一刻算起，期间无论再拦下多少陌生号码，都不会超过这个时长。</string>
+    <string name="chain_action_rule">列入规则</string>
+    <string name="chain_action_pass">暂时放行</string>
+    <string name="chain_action_whitelist">加白名单</string>
+    <string name="chain_state_rule">已列入本机规则</string>
+    <string name="chain_state_pass">暂时放行至 %1$s</string>
+    <string name="chain_state_whitelist">已在白名单</string>
+    <string name="chain_action_rule_done">已列入本机规则，这个号码之后直接拦截</string>
+    <string name="chain_action_pass_done">已暂时放行 %1$d 分钟，期间这个号码照常打进来</string>
+    <string name="chain_action_whitelist_done">已加入白名单，这个号码之后永远放行</string>
+    <string name="chain_note_from_history">连锁封禁记录转入</string>
+</resources>

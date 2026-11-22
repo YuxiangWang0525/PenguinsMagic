@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/historyFragment">
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="me.riverfrozer.penguinsmagic.ui.HistoryFragment"
+        android:label="@string/nav_history"
+        tools:layout="@layout/fragment_history">
+        <action
+            android:id="@+id/action_history_to_subscriptions"
+            app:destination="@id/subscriptionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subscriptionsFragment"
+        android:name="me.riverfrozer.penguinsmagic.ui.SubscriptionsFragment"
+        android:label="@string/nav_subscriptions"
+        tools:layout="@layout/fragment_subscriptions">
+        <action
+            android:id="@+id/action_subscriptions_to_edit"
+            app:destination="@id/editSubscriptionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editSubscriptionFragment"
+        android:name="me.riverfrozer.penguinsmagic.ui.EditSubscriptionFragment"
+        android:label="@string/subscription_edit"
+        tools:layout="@layout/fragment_edit_subscription">
+        <argument
+            android:name="subscriptionId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/blockRulesFragment"
+        android:name="me.riverfrozer.penguinsmagic.ui.BlockRulesFragment"
+        android:label="@string/nav_rules"
+        tools:layout="@layout/fragment_block_rules">
+        <action
+            android:id="@+id/action_rules_to_edit"
+            app:destination="@id/editBlockRuleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editBlockRuleFragment"
+        android:name="me.riverfrozer.penguinsmagic.ui.EditBlockRuleFragment"
+        android:label="@string/rule_edit"
+        tools:layout="@layout/fragment_edit_block_rule">
+        <argument
+            android:name="ruleId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/whitelistFragment"
+        android:name="me.riverfrozer.penguinsmagic.ui.WhitelistFragment"
+        android:label="@string/nav_whitelist"
+        tools:layout="@layout/fragment_whitelist">
+        <action
+            android:id="@+id/action_whitelist_to_edit"
+            app:destination="@id/editWhitelistFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editWhitelistFragment"
+        android:name="me.riverfrozer.penguinsmagic.ui.EditWhitelistFragment"
+        android:label="@string/whitelist_edit"
+        tools:layout="@layout/fragment_edit_whitelist">
+        <argument
+            android:name="whitelistId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="me.riverfrozer.penguinsmagic.ui.AboutFragment"
+        android:label="@string/nav_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

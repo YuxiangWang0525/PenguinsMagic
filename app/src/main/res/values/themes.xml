@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.PenguinsMagic" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/aqua_primary</item>
+        <item name="colorOnPrimary">@color/aqua_on_primary</item>
+        <item name="colorPrimaryContainer">@color/aqua_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/aqua_on_primary_container</item>
+        <item name="colorSecondary">@color/aqua_secondary</item>
+        <item name="colorOnSecondary">@color/aqua_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/aqua_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/aqua_on_secondary_container</item>
+        <item name="colorTertiary">@color/aqua_tertiary</item>
+        <item name="colorOnTertiary">@color/aqua_on_tertiary</item>
+        <item name="colorTertiaryContainer">@color/aqua_tertiary_container</item>
+        <item name="colorOnTertiaryContainer">@color/aqua_on_tertiary_container</item>
+        <item name="colorError">@color/aqua_error</item>
+        <item name="colorOnError">@color/aqua_on_error</item>
+        <item name="colorErrorContainer">@color/aqua_error_container</item>
+        <item name="colorOnErrorContainer">@color/aqua_on_error_container</item>
+        <item name="android:colorBackground">@color/aqua_background</item>
+        <item name="colorOnBackground">@color/aqua_on_background</item>
+        <item name="colorSurface">@color/aqua_surface</item>
+        <item name="colorOnSurface">@color/aqua_on_surface</item>
+        <item name="colorSurfaceVariant">@color/aqua_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/aqua_on_surface_variant</item>
+        <item name="colorOutline">@color/aqua_outline</item>
+        <item name="colorOutlineVariant">@color/aqua_outline_variant</item>
+        <item name="colorSurfaceContainerLowest">@color/aqua_surface_lowest</item>
+        <item name="colorSurfaceContainerLow">@color/aqua_surface_low</item>
+        <item name="colorSurfaceContainer">@color/aqua_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/aqua_surface_high</item>
+        <item name="colorSurfaceContainerHighest">@color/aqua_surface_highest</item>
+    </style>
+
+    <style name="Theme.PenguinsMagic" parent="Base.Theme.PenguinsMagic" />
+
+    <style name="Widget.PenguinsMagic.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardCornerRadius">@dimen/card_corner</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <style name="Widget.PenguinsMagic.Card.Outlined" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">@dimen/card_corner</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <style name="TextAppearance.PenguinsMagic.SectionTitle" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textColor">@color/aqua_primary_text</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="TextAppearance.PenguinsMagic.Number" parent="TextAppearance.Material3.TitleMedium" />
+
+    <style name="Widget.PenguinsMagic.Chip.Filter" parent="Widget.Material3.Chip.Filter" />
+
+    <style name="Widget.PenguinsMagic.Chip.Assist" parent="Widget.Material3.Chip.Assist" />
+
+</resources>

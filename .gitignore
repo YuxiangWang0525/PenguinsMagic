@@ -1,0 +1,45 @@
+# 构建产物
+/build
+*/build
+app/build/
+.cxx
+.externalNativeBuild
+*.ap_
+*.aab
+*.apk
+*.ap_
+output.json
+
+# 缓存与索引
+.gradle
+.kotlin
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/shelf/
+.idea/*.iml
+*.iml
+captures/
+.DS_Store
+
+# 本地 SDK 路径与机器相关配置
+local.properties
+/app/release/
+
+# 签名凭证与密钥（绝不提交）
+keystore.properties
+*.keystore
+*.jks
+*.p12
+
+#  Profiling / 日志
+*.hprof
+*.log
+
+# 编辑器临时与交换文件
+*.swp
+*.kate-swp
+*~
